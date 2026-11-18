@@ -1,0 +1,16 @@
+# Berkas hasil kompilasi Java
+*.class
+*.jar
+target/
+
+# Konfigurasi IDE
+.idea/
+*.iml
+
+# Berkas konfigurasi sensitif
+config.properties
+.env
+
+# Berkas sementara sistem operasi
+.DS_Store
+Thumbs.db

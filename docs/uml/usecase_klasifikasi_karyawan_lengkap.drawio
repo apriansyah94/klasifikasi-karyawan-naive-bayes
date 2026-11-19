@@ -1,0 +1,131 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="usecase2" name="Use Case Lengkap">
+    <mxGraphModel dx="1400" dy="900" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1300" pageHeight="900" math="0" shadow="0" background="#DCEBFA">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="title" value="USE CASE DIAGRAM&lt;br&gt;&lt;font style=&quot;font-size: 13px; font-weight: normal;&quot;&gt;Klasifikasi Kelayakan Karyawan Menggunakan Algoritma Naive Bayes Berbasis Web&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1F4E79;gradientColor=#2E75B6;strokeColor=#1F4E79;fontColor=#FFFFFF;fontSize=18;fontStyle=1;arcSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1200" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="sys" value="Sistem Klasifikasi Kelayakan Karyawan Berbasis Web" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;gradientColor=#EAF3FC;strokeColor=#2E75B6;strokeWidth=2;verticalAlign=top;fontStyle=1;fontSize=14;fontColor=#1F4E79;arcSize=3;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="110" width="720" height="740" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="actor" value="&lt;b&gt;Pengguna&lt;/b&gt;&lt;br&gt;(Admin, HRD, Pimpinan)" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;strokeColor=#1F4E79;strokeWidth=2;fontColor=#1F4E79;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="75" y="420" width="50" height="90" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="uc1" value="Login" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E1D5E7;gradientColor=#C3ABD0;strokeColor=#9673A6;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="160" width="200" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc2" value="Kelola data karyawan" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E1D5E7;gradientColor=#C3ABD0;strokeColor=#9673A6;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="260" width="200" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc3" value="Kelola data latih (training)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E1D5E7;gradientColor=#C3ABD0;strokeColor=#9673A6;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="390" width="200" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc4" value="Proses klasifikasi Naive Bayes" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E1D5E7;gradientColor=#C3ABD0;strokeColor=#9673A6;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="550" width="200" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="uc5" value="Lihat hasil klasifikasi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E1D5E7;gradientColor=#C3ABD0;strokeColor=#9673A6;fontStyle=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="750" width="200" height="64" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s1" value="Tampilkan pesan gagal login" style="ellipse;whiteSpace=wrap;html=1;fillColor=#D5E8D4;gradientColor=#97D077;strokeColor=#82B366;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="160" width="220" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="s2" value="Validasi data input" style="ellipse;whiteSpace=wrap;html=1;fillColor=#D5E8D4;gradientColor=#97D077;strokeColor=#82B366;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="260" width="220" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="s3" value="Tambah / ubah / hapus data karyawan" style="ellipse;whiteSpace=wrap;html=1;fillColor=#D5E8D4;gradientColor=#97D077;strokeColor=#82B366;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="340" width="220" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="s4" value="Hitung prior dan likelihood" style="ellipse;whiteSpace=wrap;html=1;fillColor=#D5E8D4;gradientColor=#97D077;strokeColor=#82B366;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="460" width="220" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="s5" value="Tentukan kelas kelayakan" style="ellipse;whiteSpace=wrap;html=1;fillColor=#D5E8D4;gradientColor=#97D077;strokeColor=#82B366;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="550" width="220" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="s6" value="Hitung akurasi model" style="ellipse;whiteSpace=wrap;html=1;fillColor=#D5E8D4;gradientColor=#97D077;strokeColor=#82B366;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="640" width="220" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="s7" value="Cetak laporan" style="ellipse;whiteSpace=wrap;html=1;fillColor=#D5E8D4;gradientColor=#97D077;strokeColor=#82B366;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="750" width="220" height="64" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a1" style="endArrow=none;html=1;rounded=0;strokeColor=#1F4E79;strokeWidth=1.5;" edge="1" parent="1" source="actor" target="uc1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a2" style="endArrow=none;html=1;rounded=0;strokeColor=#1F4E79;strokeWidth=1.5;" edge="1" parent="1" source="actor" target="uc2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a3" style="endArrow=none;html=1;rounded=0;strokeColor=#1F4E79;strokeWidth=1.5;" edge="1" parent="1" source="actor" target="uc3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a4" style="endArrow=none;html=1;rounded=0;strokeColor=#1F4E79;strokeWidth=1.5;" edge="1" parent="1" source="actor" target="uc4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a5" style="endArrow=none;html=1;rounded=0;strokeColor=#1F4E79;strokeWidth=1.5;" edge="1" parent="1" source="actor" target="uc5"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <mxCell id="e1" value="«extend»" style="endArrow=open;dashed=1;html=1;endSize=8;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=11;fontStyle=2;" edge="1" parent="1" source="s1" target="uc1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="i1" value="«include»" style="endArrow=open;dashed=1;html=1;endSize=8;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=11;fontStyle=2;" edge="1" parent="1" source="uc2" target="s2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" value="«extend»" style="endArrow=open;dashed=1;html=1;endSize=8;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=11;fontStyle=2;" edge="1" parent="1" source="s3" target="uc2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="i2" value="«include»" style="endArrow=open;dashed=1;html=1;endSize=8;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=11;fontStyle=2;" edge="1" parent="1" source="uc4" target="s4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="i3" value="«include»" style="endArrow=open;dashed=1;html=1;endSize=8;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=11;fontStyle=2;" edge="1" parent="1" source="uc4" target="s5"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" value="«extend»" style="endArrow=open;dashed=1;html=1;endSize=8;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=11;fontStyle=2;" edge="1" parent="1" source="s6" target="uc4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" value="«extend»" style="endArrow=open;dashed=1;html=1;endSize=8;rounded=0;labelBackgroundColor=#FFFFFF;fontSize=11;fontStyle=2;" edge="1" parent="1" source="s7" target="uc5"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <mxCell id="legend" value="KETERANGAN SIMBOL" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2E75B6;strokeWidth=2;verticalAlign=top;fontStyle=1;fontSize=12;fontColor=#1F4E79;arcSize=4;shadow=1;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="940" y="110" width="300" height="290" as="geometry"/>
+        </mxCell>
+        <mxCell id="lg1" value="" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;strokeColor=#1F4E79;" vertex="1" parent="1">
+          <mxGeometry x="965" y="148" width="24" height="44" as="geometry"/>
+        </mxCell>
+        <mxCell id="lg1t" value="Aktor: Pengguna (Admin, HRD, Pimpinan)" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="155" width="215" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="lg2" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#E1D5E7;gradientColor=#C3ABD0;strokeColor=#9673A6;" vertex="1" parent="1">
+          <mxGeometry x="956" y="209" width="60" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="lg2t" value="Use case utama" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="210" width="195" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="lg3" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#D5E8D4;gradientColor=#97D077;strokeColor=#82B366;" vertex="1" parent="1">
+          <mxGeometry x="956" y="251" width="60" height="32" as="geometry"/>
+        </mxCell>
+        <mxCell id="lg3t" value="Use case tambahan (include / extend)" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="252" width="195" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="lg4" style="endArrow=none;html=1;strokeColor=#1F4E79;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="956" y="305" as="sourcePoint"/>
+            <mxPoint x="1016" y="305" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lg4t" value="Asosiasi (aktor ke use case)" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="290" width="195" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="lg5" style="endArrow=open;dashed=1;html=1;endSize=8;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="956" y="340" as="sourcePoint"/>
+            <mxPoint x="1016" y="340" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lg5t" value="«include»: selalu dijalankan oleh use case induk" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="325" width="205" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="lg6" style="endArrow=open;dashed=1;html=1;endSize=8;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1016" y="373" as="sourcePoint"/>
+            <mxPoint x="956" y="373" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lg6t" value="«extend»: opsional, hanya jika kondisi terpenuhi" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="358" width="205" height="30" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="aktorbox" value="&lt;b&gt;KETERANGAN AKTOR&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Admin&lt;/b&gt;: mengelola data karyawan dan data latih.&lt;br&gt;&lt;b&gt;HRD&lt;/b&gt;: menjalankan proses klasifikasi dan melihat hasilnya.&lt;br&gt;&lt;b&gt;Pimpinan&lt;/b&gt;: melihat hasil klasifikasi dan mencetak laporan.&lt;br&gt;&lt;br&gt;Semua aktor wajib melakukan Login terlebih dahulu." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2E75B6;strokeWidth=2;verticalAlign=top;align=left;fontSize=11;fontColor=#1F4E79;arcSize=4;shadow=1;spacingLeft=12;spacingRight=10;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="940" y="420" width="300" height="170" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="ucbox" value="&lt;b&gt;KETERANGAN USE CASE&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Login&lt;/b&gt;: verifikasi username dan password pengguna.&lt;br&gt;&lt;b&gt;Kelola data karyawan&lt;/b&gt;: mengelola data karyawan, input divalidasi terlebih dahulu.&lt;br&gt;&lt;b&gt;Kelola data latih&lt;/b&gt;: data historis sebagai dasar perhitungan Naive Bayes.&lt;br&gt;&lt;b&gt;Proses klasifikasi&lt;/b&gt;: hitung prior, likelihood, dan posterior, lalu tentukan kelas Layak atau Tidak Layak.&lt;br&gt;&lt;b&gt;Lihat hasil&lt;/b&gt;: menampilkan hasil klasifikasi, dapat dicetak sebagai laporan." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2E75B6;strokeWidth=2;verticalAlign=top;align=left;fontSize=11;fontColor=#1F4E79;arcSize=4;shadow=1;spacingLeft=12;spacingRight=10;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="940" y="610" width="300" height="240" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

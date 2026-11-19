@@ -1,0 +1,203 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="class1" name="Class Diagram">
+    <mxGraphModel dx="1400" dy="900" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1620" pageHeight="1100" math="0" shadow="0" background="#DCEBFA">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="title" value="CLASS DIAGRAM&lt;br&gt;&lt;font style=&quot;font-size: 13px; font-weight: normal;&quot;&gt;Klasifikasi Kelayakan Karyawan Menggunakan Algoritma Naive Bayes Berbasis Web&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1F4E79;gradientColor=#2E75B6;strokeColor=#1F4E79;fontColor=#FFFFFF;fontSize=18;fontStyle=1;arcSize=12;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="1530" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="panel" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2E75B6;strokeWidth=2;arcSize=1;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="1270" height="960" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="cUser" value="User" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=26;horizontal=1;collapsible=0;html=1;whiteSpace=wrap;fontSize=12;swimlaneFillColor=#FFFFFF;fillColor=#E1D5E7;strokeColor=#9673A6;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="120" width="250" height="170" as="geometry"/>
+        </mxCell>
+        <mxCell id="cUser_a" value="- idUser : int&lt;br&gt;- nama : String&lt;br&gt;- username : String&lt;br&gt;- password : String&lt;br&gt;- role : String" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;overflow=hidden;rotatable=0;fontSize=11;" vertex="1" parent="cUser">
+          <mxGeometry y="26" width="250" height="83" as="geometry"/>
+        </mxCell>
+        <mxCell id="cUser_l" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;rotatable=0;strokeColor=#6C6C6C;html=1;" vertex="1" parent="cUser">
+          <mxGeometry y="109" width="250" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="cUser_m" value="+ User(...)&lt;br&gt;+ login(username, password) : boolean&lt;br&gt;+ logout() : void" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;overflow=hidden;rotatable=0;fontSize=11;" vertex="1" parent="cUser">
+          <mxGeometry y="117" width="250" height="53" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="cAdmin" value="Admin" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=26;horizontal=1;collapsible=0;html=1;whiteSpace=wrap;fontSize=12;swimlaneFillColor=#FFFFFF;fillColor=#E1D5E7;strokeColor=#9673A6;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="340" width="250" height="95" as="geometry"/>
+        </mxCell>
+        <mxCell id="cAdmin_a" value="" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;whiteSpace=wrap;overflow=hidden;rotatable=0;fontSize=11;" vertex="1" parent="cAdmin">
+          <mxGeometry y="26" width="250" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="cAdmin_l" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;rotatable=0;strokeColor=#6C6C6C;html=1;" vertex="1" parent="cAdmin">
+          <mxGeometry y="34" width="250" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="cAdmin_m" value="+ Admin(...)&lt;br&gt;+ kelolaKaryawan(k, aksi) : boolean&lt;br&gt;+ kelolaDataLatih(d, aksi) : boolean" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;overflow=hidden;rotatable=0;fontSize=11;" vertex="1" parent="cAdmin">
+          <mxGeometry y="42" width="250" height="53" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="cHrd" value="HRD" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=26;horizontal=1;collapsible=0;html=1;whiteSpace=wrap;fontSize=12;swimlaneFillColor=#FFFFFF;fillColor=#E1D5E7;strokeColor=#9673A6;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="340" width="250" height="95" as="geometry"/>
+        </mxCell>
+        <mxCell id="cHrd_a" value="" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;whiteSpace=wrap;overflow=hidden;rotatable=0;fontSize=11;" vertex="1" parent="cHrd">
+          <mxGeometry y="26" width="250" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="cHrd_l" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;rotatable=0;strokeColor=#6C6C6C;html=1;" vertex="1" parent="cHrd">
+          <mxGeometry y="34" width="250" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="cHrd_m" value="+ HRD(...)&lt;br&gt;+ prosesKlasifikasi(k, nb) : HasilKlasifikasi&lt;br&gt;+ lihatHasil() : List&lt;HasilKlasifikasi&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;overflow=hidden;rotatable=0;fontSize=11;" vertex="1" parent="cHrd">
+          <mxGeometry y="42" width="250" height="53" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="cPim" value="Pimpinan" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=26;horizontal=1;collapsible=0;html=1;whiteSpace=wrap;fontSize=12;swimlaneFillColor=#FFFFFF;fillColor=#E1D5E7;strokeColor=#9673A6;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="340" width="250" height="95" as="geometry"/>
+        </mxCell>
+        <mxCell id="cPim_a" value="" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;whiteSpace=wrap;overflow=hidden;rotatable=0;fontSize=11;" vertex="1" parent="cPim">
+          <mxGeometry y="26" width="250" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="cPim_l" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;rotatable=0;strokeColor=#6C6C6C;html=1;" vertex="1" parent="cPim">
+          <mxGeometry y="34" width="250" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="cPim_m" value="+ Pimpinan(...)&lt;br&gt;+ lihatHasil() : List&lt;HasilKlasifikasi&gt;&lt;br&gt;+ cetakLaporan(periode) : void" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;overflow=hidden;rotatable=0;fontSize=11;" vertex="1" parent="cPim">
+          <mxGeometry y="42" width="250" height="53" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="cKar" value="Karyawan" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=26;horizontal=1;collapsible=0;html=1;whiteSpace=wrap;fontSize=12;swimlaneFillColor=#FFFFFF;fillColor=#DAE8FC;strokeColor=#6C8EBF;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="520" width="250" height="260" as="geometry"/>
+        </mxCell>
+        <mxCell id="cKar_a" value="- idKaryawan : int&lt;br&gt;- nip : String&lt;br&gt;- nama : String&lt;br&gt;- jabatan : String&lt;br&gt;- absensi : String&lt;br&gt;- kinerja : String&lt;br&gt;- masaKerja : String&lt;br&gt;- disiplin : String" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;overflow=hidden;rotatable=0;fontSize=11;" vertex="1" parent="cKar">
+          <mxGeometry y="26" width="250" height="128" as="geometry"/>
+        </mxCell>
+        <mxCell id="cKar_l" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;rotatable=0;strokeColor=#6C6C6C;html=1;" vertex="1" parent="cKar">
+          <mxGeometry y="154" width="250" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="cKar_m" value="+ Karyawan(...)&lt;br&gt;+ tambahKaryawan() : boolean&lt;br&gt;+ ubahKaryawan() : boolean&lt;br&gt;+ hapusKaryawan() : boolean&lt;br&gt;+ cariKaryawan(kata) : List&lt;Karyawan&gt;&lt;br&gt;+ getFitur() : String[]" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;overflow=hidden;rotatable=0;fontSize=11;" vertex="1" parent="cKar">
+          <mxGeometry y="162" width="250" height="98" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="cDl" value="DataLatih" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=26;horizontal=1;collapsible=0;html=1;whiteSpace=wrap;fontSize=12;swimlaneFillColor=#FFFFFF;fillColor=#DAE8FC;strokeColor=#6C8EBF;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="520" width="250" height="230" as="geometry"/>
+        </mxCell>
+        <mxCell id="cDl_a" value="- idLatih : int&lt;br&gt;- absensi : String&lt;br&gt;- kinerja : String&lt;br&gt;- masaKerja : String&lt;br&gt;- disiplin : String&lt;br&gt;- kelayakan : String" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;overflow=hidden;rotatable=0;fontSize=11;" vertex="1" parent="cDl">
+          <mxGeometry y="26" width="250" height="98" as="geometry"/>
+        </mxCell>
+        <mxCell id="cDl_l" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;rotatable=0;strokeColor=#6C6C6C;html=1;" vertex="1" parent="cDl">
+          <mxGeometry y="124" width="250" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="cDl_m" value="+ DataLatih(...)&lt;br&gt;+ tambahData() : boolean&lt;br&gt;+ ubahData() : boolean&lt;br&gt;+ hapusData() : boolean&lt;br&gt;+ importData(pathCsv) : int&lt;br&gt;+ getFitur() : String[]" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;overflow=hidden;rotatable=0;fontSize=11;" vertex="1" parent="cDl">
+          <mxGeometry y="132" width="250" height="98" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="cNb" value="NaiveBayes" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=26;horizontal=1;collapsible=0;html=1;whiteSpace=wrap;fontSize=12;swimlaneFillColor=#FFFFFF;fillColor=#FFE6CC;strokeColor=#D79B00;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="520" width="250" height="215" as="geometry"/>
+        </mxCell>
+        <mxCell id="cNb_a" value="- JML_KATEGORI : int = 3&lt;br&gt;- priorLayak : double&lt;br&gt;- priorTidakLayak : double&lt;br&gt;- jmlDataLatih : int&lt;br&gt;- dataLatih : List&lt;DataLatih&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;overflow=hidden;rotatable=0;fontSize=11;" vertex="1" parent="cNb">
+          <mxGeometry y="26" width="250" height="83" as="geometry"/>
+        </mxCell>
+        <mxCell id="cNb_l" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;rotatable=0;strokeColor=#6C6C6C;html=1;" vertex="1" parent="cNb">
+          <mxGeometry y="109" width="250" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="cNb_m" value="+ NaiveBayes(...)&lt;br&gt;+ hitungPrior() : void&lt;br&gt;+ hitungLikelihood(fitur, kelas) : double&lt;br&gt;+ hitungPosterior(fitur, kelas) : double&lt;br&gt;+ tentukanKelas(fitur) : String&lt;br&gt;+ hitungAkurasi(dataUji) : double" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;overflow=hidden;rotatable=0;fontSize=11;" vertex="1" parent="cNb">
+          <mxGeometry y="117" width="250" height="98" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="cHs" value="HasilKlasifikasi" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=26;horizontal=1;collapsible=0;html=1;whiteSpace=wrap;fontSize=12;swimlaneFillColor=#FFFFFF;fillColor=#DAE8FC;strokeColor=#6C8EBF;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="830" width="250" height="185" as="geometry"/>
+        </mxCell>
+        <mxCell id="cHs_a" value="- idHasil : int&lt;br&gt;- idKaryawan : int&lt;br&gt;- probLayak : double&lt;br&gt;- probTidakLayak : double&lt;br&gt;- kelas : String&lt;br&gt;- tanggal : LocalDate" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;overflow=hidden;rotatable=0;fontSize=11;" vertex="1" parent="cHs">
+          <mxGeometry y="26" width="250" height="98" as="geometry"/>
+        </mxCell>
+        <mxCell id="cHs_l" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;rotatable=0;strokeColor=#6C6C6C;html=1;" vertex="1" parent="cHs">
+          <mxGeometry y="124" width="250" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="cHs_m" value="+ HasilKlasifikasi(...)&lt;br&gt;+ simpanHasil() : boolean&lt;br&gt;+ tampilHasil() : List&lt;HasilKlasifikasi&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;overflow=hidden;rotatable=0;fontSize=11;" vertex="1" parent="cHs">
+          <mxGeometry y="132" width="250" height="53" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="cLp" value="Laporan" style="swimlane;fontStyle=1;align=center;verticalAlign=top;startSize=26;horizontal=1;collapsible=0;html=1;whiteSpace=wrap;fontSize=12;swimlaneFillColor=#FFFFFF;fillColor=#DAE8FC;strokeColor=#6C8EBF;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="520" width="250" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="cLp_a" value="- idLaporan : int&lt;br&gt;- periode : String&lt;br&gt;- tanggalCetak : LocalDate" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;overflow=hidden;rotatable=0;fontSize=11;" vertex="1" parent="cLp">
+          <mxGeometry y="26" width="250" height="53" as="geometry"/>
+        </mxCell>
+        <mxCell id="cLp_l" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;rotatable=0;strokeColor=#6C6C6C;html=1;" vertex="1" parent="cLp">
+          <mxGeometry y="79" width="250" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="cLp_m" value="+ Laporan(...)&lt;br&gt;+ buatLaporan(data) : String&lt;br&gt;+ cetakLaporan(data) : void" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingTop=2;whiteSpace=wrap;overflow=hidden;rotatable=0;fontSize=11;" vertex="1" parent="cLp">
+          <mxGeometry y="87" width="250" height="53" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="g1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=0;endSize=12;strokeColor=#1F4E79;strokeWidth=1.5;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="cAdmin" target="cUser"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="g2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=0;endSize=12;strokeColor=#1F4E79;strokeWidth=1.5;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="cHrd" target="cUser"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="g3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=0;endSize=12;strokeColor=#1F4E79;strokeWidth=1.5;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="cPim" target="cUser"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <mxCell id="a1" value="1  mengelola  *" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;strokeColor=#1F4E79;strokeWidth=1.5;fontSize=10;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cAdmin" target="cKar"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a2" value="1  mengelola  *" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endFill=0;strokeColor=#1F4E79;strokeWidth=1.5;fontSize=10;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="cAdmin" target="cDl"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a3" value="menjalankan" style="html=1;rounded=0;endArrow=open;endFill=0;strokeColor=#1F4E79;strokeWidth=1.5;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="cHrd" target="cNb"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a4" value="«use»" style="html=1;rounded=0;dashed=1;endArrow=open;endFill=0;strokeColor=#1F4E79;strokeWidth=1.5;fontSize=10;fontStyle=2;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="cNb" target="cDl"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a5" value="1  menghasilkan  *" style="html=1;rounded=0;endArrow=open;endFill=0;strokeColor=#1F4E79;strokeWidth=1.5;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="cNb" target="cHs"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a6" value="1  dinilai  *" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#1F4E79;strokeWidth=1.5;fontSize=10;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="cKar" target="cHs"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a7" value="dicetak" style="html=1;rounded=0;endArrow=none;strokeColor=#1F4E79;strokeWidth=1.5;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="cHs" target="cLp"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a8" value="mencetak" style="html=1;rounded=0;endArrow=open;endFill=0;strokeColor=#1F4E79;strokeWidth=1.5;fontSize=10;labelBackgroundColor=#FFFFFF;" edge="1" parent="1" source="cPim" target="cLp"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+        <mxCell id="legend" value="KETERANGAN SIMBOL" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2E75B6;strokeWidth=2;verticalAlign=top;fontStyle=1;fontSize=12;fontColor=#1F4E79;arcSize=4;shadow=1;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="1330" y="100" width="240" height="380" as="geometry"/>
+        </mxCell>
+        <mxCell id="lg1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;" vertex="1" parent="1">
+          <mxGeometry x="1345" y="142" width="54" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="lg1t" value="Kelas entitas / data (biru)" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1410" y="142" width="150" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="lg2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;" vertex="1" parent="1">
+          <mxGeometry x="1345" y="184" width="54" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="lg2t" value="Kelas pengguna (ungu)" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1410" y="184" width="150" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="lg3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;" vertex="1" parent="1">
+          <mxGeometry x="1345" y="226" width="54" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="lg3t" value="Kelas proses Naive Bayes (oranye)" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1410" y="226" width="150" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="lg4" style="endArrow=block;endFill=0;endSize=10;html=1;strokeColor=#1F4E79;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1345" y="290" as="sourcePoint"/>
+            <mxPoint x="1399" y="290" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lg4t" value="Generalisasi (pewarisan: Admin, HRD, Pimpinan adalah User)" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1410" y="272" width="150" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="lg5" style="endArrow=open;endFill=0;html=1;strokeColor=#1F4E79;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1345" y="335" as="sourcePoint"/>
+            <mxPoint x="1399" y="335" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lg5t" value="Asosiasi (angka = multiplisitas)" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1410" y="320" width="150" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="lg6" style="endArrow=open;endFill=0;dashed=1;html=1;strokeColor=#1F4E79;strokeWidth=1.5;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1345" y="378" as="sourcePoint"/>
+            <mxPoint x="1399" y="378" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lg6t" value="Dependensi («use»: NaiveBayes memakai DataLatih)" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1410" y="360" width="150" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="lg7" value="&lt;b&gt;-&lt;/b&gt; private (atribut)&lt;br&gt;&lt;b&gt;+&lt;/b&gt; public (method)" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1345" y="410" width="205" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="notes" value="&lt;b&gt;KETERANGAN KELAS&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;User&lt;/b&gt;: data akun dan login. Diwarisi oleh Admin, HRD, Pimpinan.&lt;br&gt;&lt;b&gt;Admin&lt;/b&gt;: mengelola data karyawan dan data latih.&lt;br&gt;&lt;b&gt;HRD&lt;/b&gt;: menjalankan klasifikasi dan melihat hasil.&lt;br&gt;&lt;b&gt;Pimpinan&lt;/b&gt;: melihat hasil dan mencetak laporan.&lt;br&gt;&lt;b&gt;Karyawan&lt;/b&gt;: data karyawan yang dinilai.&lt;br&gt;&lt;b&gt;DataLatih&lt;/b&gt;: data historis beserta label kelayakan.&lt;br&gt;&lt;b&gt;NaiveBayes&lt;/b&gt;: menghitung prior, likelihood, posterior, menentukan kelas, dan akurasi.&lt;br&gt;&lt;b&gt;HasilKlasifikasi&lt;/b&gt;: menyimpan probabilitas dan kelas Layak / Tidak Layak.&lt;br&gt;&lt;b&gt;Laporan&lt;/b&gt;: rekap hasil untuk dicetak." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#2E75B6;strokeWidth=2;verticalAlign=top;align=left;fontSize=11;fontColor=#1F4E79;arcSize=4;shadow=1;spacingLeft=12;spacingRight=10;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="1330" y="500" width="240" height="400" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

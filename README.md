@@ -9,8 +9,8 @@ Repositori ini dipakai untuk latihan kolaborasi tim dengan GitHub (branch, pull 
 | Nama | Akun GitHub | Branch | Bagian yang dikerjakan |
 |---|---|---|---|
 | Fikri Apriansyah | apriansyah94 | `feature/class-diagram` | Class diagram, object diagram, dan pemetaan kelas ke kode Java (`docs/uml`, `docs/class-ke-java`) |
-| Ahmad Hidayat | ahmad-hidayat04 | `feature/kode-java` | Kode program Java 10 kelas (`src`) |
-| Safik Akbar | Safik111 | `feature/ui-desain` | Desain UI/UX 9 layar (`ui`) |
+| Ahmad Hidayat | ahmad-hidayat04 | `ahmad-hidayat04-patch-1` | Kode program Java 10 kelas (`src`) |
+| Safik Akbar | Safik111 | `Safik111-patch-1` | Desain UI/UX 9 layar (`ui`) |
 | Raden Alfian Pramudya | radenalfian665 | `feature/uml-perilaku` | Use case, activity, sequence, dan state diagram (`docs/uml`) |
 
 ## Struktur Folder
